@@ -7,7 +7,7 @@
 config.vm.box = "ubuntu/xenial64"
 
 ## Steps
-```
+```bash
 cd fuelzee-vagrant
 vagrant up
 vagrant ssh
@@ -16,6 +16,6 @@ bundle install
 ```
 
 _Finally, restore the most recent mLab backup then start the API with_
-```
+```bash
 ./start.sh
 ```
