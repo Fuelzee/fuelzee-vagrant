@@ -1,0 +1,5 @@
+
+.vagrant/
+mongobackups
+*.log
+fuelzee_api
