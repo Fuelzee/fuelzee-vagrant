@@ -40,3 +40,13 @@ Notes:
 1. Edit source code on your Mac at ``<fuelzee-vagrant-project-dir>``
 2. On your Mac browser, go to http://127.0.0.1:9292/v1/stations?lat=0.034930&lon=-51.058500&order=distance&radius=15000
 3. When your Mac sleeps, your gets automatically suspended, so you’ll lose ssh connection. After your computer is wake up you can resume the vm with ‘vagrant resume’
+
+# Troubleshooting
+Sometimes you can lose access to the vm or it may say that the tcp port 9292 is already in use. In this case do this:
+```bash
+vagrant halt
+vagrant up
+vagrant ssh
+cd /vagrant/fuelzee-api
+./start.sh
+```
